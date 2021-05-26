@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;600&display=swap" rel="stylesheet">
+    <title>Contacto Espejos DECO</title>
+    <link rel="stylesheet" href="./Estilos/contacto.css">
+    
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
+        </a>
+      </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
+        <li><a href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
+        <li><a href="./historia.html" rel="noopener noreferrer">Historia</a></li>
+        <li><a href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
+        <li><a href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+    <!-- formulario -->
+      <form>
+        <h4>Responderemos a la brevedad</h4>
+
+          <!-- NOMBRE -->
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Inserte su nombre"/>
+        
+          <!-- EMAIL -->
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" />
+         
+          <!-- ELECCION DE TIPO DE CONSULTA -->
+          <select name="consulta" id="consulta">
+            <option value="opinion">Opinion</option>
+            <option value="consulta_envio">Medio de envio</option>
+            <option value="consulta_modelo">Modelos</option>
+          </select>
+          
+          <!-- ZONA PARA DEJAR TEXTO -->
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10">Escribe aqui tu mensaje</textarea>
+          
+          <label for="promociones">Desea recibir promociones exclusivas?</label>
+          <input type="checkbox" name="promociones" value="1" id="promociones"/>
+          
+          <!-- BOTONES PARA ENVIAR O RESETEAR -->
+          <input type="reset" value="Limpiar"/>
+          <input type="submit" value="Enviar"/>
+
+      </form>
+    </main>
+    <!--  FOOTER  -->
+    <footer>
+      <div class="footer__socialmedia">
+        <h4>redes sociales</h4>
+        <ul>
+          <il><a href="https://www.instagram.com/espejos_deco/" target="_blank" rel="noopener noreferrer"><img src="./images/ig.png" alt=""></a></il>
+          <il><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img src="./images/facebook.png" alt=""></a></il>
+          <il><a href="http://pinterest.com" target="_blank" rel="noopener noreferrer"><img src="./images/pinterest.png" alt=""></a></il>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>contacto</h4>
+        <p>espejos.deco@gmail.com</p>
+      </div>
+      <div class="footer__mediosdepago">
+        <h4>medios de pago</h4>
+        <ul>
+          <li><img src="./images/visa.png" alt="visa"></li>
+          <li><img src="./images/americanexpress.png" alt="american express"></li>
+          <li><img src="./images/mastercard.png" alt="mastercard"></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
