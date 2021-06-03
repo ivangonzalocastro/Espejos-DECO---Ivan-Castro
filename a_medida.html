@@ -7,69 +7,94 @@
     <link rel="stylesheet" href="./Estilos/amedida.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Modelos a medida Espejos DECO</title>
   </head>
   <body>
     <!-- HEADER -->
     <header>
       
-      <div class="logo">
+      <div class="container d-flex justify-content-center">
         <a href="./index.html"><img src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
         </a>
       </div>
-    <nav class="menu">
-      <ul>
-        <li><a href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
-        <li><a href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
-        <li><a href="./historia.html" rel="noopener noreferrer">Historia</a></li>
-        <li><a href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
-        <li><a href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
+     <!-- nav MENU LINKS -->
+     <div class="dropdown boton_menu justify-content-center my-3">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="./modelos.html">Modelos</a></li>
+        <li><a class="dropdown-item" href="./a_medida.html">A medida</a></li>
+        <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
+        <li><a class="dropdown-item" href="./promociones.html">Promociones</a></li>
+        <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
       </ul>
-    </nav>
+    </div>
+    
+    <div class="menu_desktop">
+        <ul class=" container nav justify-content-evenly">
+          <li class="nav-item"><a class="nav-link link-success" href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./historia.html" rel="noopener noreferrer">Historia</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
+        </ul>
+      </div>
     </header>
     <!-- FORMULARIO PARA INSERTAR MEDIDAS DEL MODELO -->
-    <main class="contenedor">
-      <div class="titulo">
-        <h4>Dejenos aqui los detalles de su modelo</h4>
+    <main class="container my-6" >
+      <div>
+        <h4 class="text-center my-4">Dejenos aqui los detalles de su modelo</h4>
       </div>
-      <form>
-        <label for="altura">Altura deseada (en cm):</label>
-        <input type="number" id="altura" name="altura" minlength="40" maxlength="100">
+      <form class="row justify-content-center">
+        <div class="mb-3 col-md-6">
+          <label for="altura" class="form-label">Altura deseada (en cm):</label>
+          <input type="number" class="form-control" id="altura" name="altura" minlength="40" maxlength="100">
+        </div>
         <br>
-        <label for="ancho">Ancho deseado (en cm):</label>
-        <input type="number" id="ancho" name="ancho" minlength="40" maxlength="100">
+        <div class="mb-3 col-md-6">
+          <label for="ancho" class="form-label">Ancho deseado (en cm):</label>
+          <input type="number" class="form-control" id="ancho" name="ancho" minlength="40" maxlength="100">
+        </div>
         <br>
-        <label for="personalizacion">Personalización</label>
-        <textarea name="personalizacion" id="personalizacion" cols="30" rows="5">Dejenos aqui los detalles deseados</textarea>
+        <div class="mb-3">
+          <label for="personalizacion" class="form-label">Personalización</label>
+          <textarea class="form-control" name="personalizacion" id="personalizacion" cols="30" rows="3" placeholder="Dejenos aqui los detalles deseados"></textarea>
+        </div>
         <br>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email">
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
         <br>
-        <input type="submit" name="enviar" id="enviar">
+        <input class="mb-3 col-md-3" type="submit" name="enviar" id="enviar">
       </form>
     </main>
-    <!--  FOOTER  -->
-    <footer>
-      <div class="footer__socialmedia">
-        <h4>redes sociales</h4>
-        <ul>
-          <il><a href="https://www.instagram.com/espejos_deco/" target="_blank" rel="noopener noreferrer"><img src="./images/ig.png" alt=""></a></il>
-          <il><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img src="./images/facebook.png" alt=""></a></il>
-          <il><a href="http://pinterest.com" target="_blank" rel="noopener noreferrer"><img src="./images/pinterest.png" alt=""></a></il>
-        </ul>
+   <!--  FOOTER  -->
+   <footer class="container">
+    <div class="row">
+      <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+        <h4 class="text-uppercase">redes sociales</h4>
+          <div class="d-flex flex-row justify-content-between">
+            <il><a href="https://www.instagram.com/espejos_deco/" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/ig.png" alt=""></a></il>
+            <il><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/facebook.png" alt=""></a></il>
+            <il><a href="http://pinterest.com" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/pinterest.png" alt=""></a></il>
+          </div>
       </div>
-      <div class="footer__contact">
-        <h4>contacto</h4>
+      <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+        <h4 class="text-uppercase">contacto</h4>
         <p>espejos.deco@gmail.com</p>
       </div>
-      <div class="footer__mediosdepago">
-        <h4>medios de pago</h4>
-        <ul>
-          <li><img src="./images/visa.png" alt="visa"></li>
-          <li><img src="./images/americanexpress.png" alt="american express"></li>
-          <li><img src="./images/mastercard.png" alt="mastercard"></li>
-        </ul>
+      <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+        <h4 class="text-uppercase">medios de pago</h4>
+        <div class="d-flex flex-row justify-content-between gap-5">
+          <li><img class="imgtarjetas" src="./images/visa.png" alt="visa"></li>
+          <li><img class="imgtarjetas" src="./images/americanexpress.png" alt="american express"></li>
+          <li><img class="imgtarjetas" src="./images/mastercard.png" alt="mastercard"></li>
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
