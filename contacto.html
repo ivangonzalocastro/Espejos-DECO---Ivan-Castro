@@ -8,79 +8,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;600&display=swap" rel="stylesheet">
     <title>Contacto Espejos DECO</title>
     <link rel="stylesheet" href="./Estilos/contacto.css">
-    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <div class="logo">
-        <a href="./index.html"><img src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
-        </a>
-      </div>
-    <nav class="menu">
-      <ul>
-        <li><a href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
-        <li><a href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
-        <li><a href="./historia.html" rel="noopener noreferrer">Historia</a></li>
-        <li><a href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
-        <li><a href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
+  <!-- HEADER -->
+  <header>
+      
+    <div class="container d-flex justify-content-center">
+      <a href="./index.html"><img src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
+      </a>
+    </div>
+   <!-- nav MENU LINKS -->
+   <div class="dropdown boton_menu justify-content-center my-3">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="./modelos.html">Modelos</a></li>
+      <li><a class="dropdown-item" href="./a_medida.html">A medida</a></li>
+      <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
+      <li><a class="dropdown-item" href="./promociones.html">Promociones</a></li>
+      <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+  
+  <div class="menu_desktop">
+      <ul class=" container nav justify-content-evenly">
+        <li class="nav-item"><a class="nav-link link-success" href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
+        <li class="nav-item"><a class="nav-link link-success" href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
+        <li class="nav-item"><a class="nav-link link-success" href="./historia.html" rel="noopener noreferrer">Historia</a></li>
+        <li class="nav-item"><a class="nav-link link-success" href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
+        <li class="nav-item"><a class="nav-link link-success" href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
       </ul>
-    </nav>
-    </header>
-    <main>
+    </div>
+  </header>
+    <main class="container">
     <!-- formulario -->
-      <form>
-        <h4>Responderemos a la brevedad</h4>
-
+    <h4 class="text-center">Responderemos a la brevedad</h4>
+    
+    <form class="row justify-content-center">
           <!-- NOMBRE -->
-          <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" id="nombre" placeholder="Inserte su nombre"/>
-        
+          <div class="mb-3 col-md-6">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Inserte su nombre"/>
+          </div>
           <!-- EMAIL -->
-          <label for="email">E-mail:</label>
-          <input type="email" name="email" id="email" />
-         
+          <div class="mb-3 col-md-6">
+          <label for="email" class="form-label">E-mail:</label>
+          <input type="email"  class="form-control" name="email" id="email" />
+          </div>  
           <!-- ELECCION DE TIPO DE CONSULTA -->
-          <select name="consulta" id="consulta">
+          <div class="mb-3">
+          <select class="form-select" name="consulta" id="consulta">
+            <option selected>Elija su tipo de consulta</option>
             <option value="opinion">Opinion</option>
             <option value="consulta_envio">Medio de envio</option>
             <option value="consulta_modelo">Modelos</option>
           </select>
-          
+          </div>  
           <!-- ZONA PARA DEJAR TEXTO -->
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10">Escribe aqui tu mensaje</textarea>
-          
+          <div class="mb-3">
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control">Escribe aqui tu mensaje</textarea>
+          <div class="mb-3">
           <label for="promociones">Desea recibir promociones exclusivas?</label>
           <input type="checkbox" name="promociones" value="1" id="promociones"/>
-          
+          </div>  
           <!-- BOTONES PARA ENVIAR O RESETEAR -->
-          <input type="reset" value="Limpiar"/>
-          <input type="submit" value="Enviar"/>
-
-      </form>
+          <div class="mb-3 col-md-6 ">
+          <input type="reset" class="btn btn-danger" value="Limpiar"/>
+          <input type="submit" class="btn btn-primary" value="Enviar"/>
+          </div> 
+        </form>
     </main>
     <!--  FOOTER  -->
-    <footer>
-      <div class="footer__socialmedia">
-        <h4>redes sociales</h4>
-        <ul>
-          <il><a href="https://www.instagram.com/espejos_deco/" target="_blank" rel="noopener noreferrer"><img src="./images/ig.png" alt=""></a></il>
-          <il><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img src="./images/facebook.png" alt=""></a></il>
-          <il><a href="http://pinterest.com" target="_blank" rel="noopener noreferrer"><img src="./images/pinterest.png" alt=""></a></il>
-        </ul>
+   <footer class="container">
+    <div class="row">
+      <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+        <h4 class="text-uppercase">redes sociales</h4>
+          <div class="d-flex flex-row justify-content-between">
+            <il><a href="https://www.instagram.com/espejos_deco/" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/ig.png" alt=""></a></il>
+            <il><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/facebook.png" alt=""></a></il>
+            <il><a href="http://pinterest.com" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/pinterest.png" alt=""></a></il>
+          </div>
       </div>
-      <div class="footer__contact">
-        <h4>contacto</h4>
+      <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+        <h4 class="text-uppercase">contacto</h4>
         <p>espejos.deco@gmail.com</p>
       </div>
-      <div class="footer__mediosdepago">
-        <h4>medios de pago</h4>
-        <ul>
-          <li><img src="./images/visa.png" alt="visa"></li>
-          <li><img src="./images/americanexpress.png" alt="american express"></li>
-          <li><img src="./images/mastercard.png" alt="mastercard"></li>
-        </ul>
+      <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+        <h4 class="text-uppercase">medios de pago</h4>
+        <div class="d-flex flex-row justify-content-between gap-5">
+          <li><img class="imgtarjetas" src="./images/visa.png" alt="visa"></li>
+          <li><img class="imgtarjetas" src="./images/americanexpress.png" alt="american express"></li>
+          <li><img class="imgtarjetas" src="./images/mastercard.png" alt="mastercard"></li>
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
