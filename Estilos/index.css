@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
 }
+.imagen_titulo{
+  background-image: url(https://cdn.pixabay.com/photo/2015/12/08/00/26/desk-1081708_1280.jpg);
+  /* object-fit: cover;
+  object-position: center; */
+  background-position: bottom;
+  background-size: cover;
+  height: 500px;
+}
 
 .menu_desktop{
   display: none;
@@ -10,6 +18,21 @@
   display: flex;
   justify-content: center;
 }
+main div img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+footer div div div li img{
+  height: 40px;
+  width: 40px;
+  object-position: center;
+}
+li{
+  list-style-type: none;
+}
+
 @media screen and (min-width: 768px) {
   .menu_desktop{
     display: flex;
@@ -17,15 +40,4 @@
   }
   .boton_menu{
     display: none;
-}
-
-main div img{
-  height: 800px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-footer div div ul li img{
-  height: 10px;
-  width: 10px;
 }
