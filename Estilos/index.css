@@ -32,7 +32,7 @@ footer div div div li img{
 li{
   list-style-type: none;
 }
-
+/* MENU DESPLEGABLE EN CASO DE QUE PANTALLAS CHICAS Y MENU NAVEGACION EN CASA DE PANTALLAS GRANDES */
 @media screen and (min-width: 768px) {
   .menu_desktop{
     display: flex;
