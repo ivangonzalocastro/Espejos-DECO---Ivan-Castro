@@ -11,38 +11,36 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Modelos espejos DECO</title>
   </head>
-  <body>
+  <body class="container">
     <!-- HEADER -->
-  <header>
-      
-    <div class="container d-flex justify-content-center">
-      <a href="./index.html"><img src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
-      </a>
-    </div>
-   <!-- nav MENU LINKS -->
-   <div class="dropdown boton_menu justify-content-center my-3">
-    <button type="button" class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="./modelos.html">Modelos</a></li>
-      <li><a class="dropdown-item" href="./a_medida.html">A medida</a></li>
-      <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
-      <li><a class="dropdown-item" href="./promociones.html">Promociones</a></li>
-      <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
-    </ul>
-  </div>
-  
-  <div class="menu_desktop">
-      <ul class=" container nav justify-content-evenly">
-        <li class="nav-item"><a class="nav-link link-success" href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
-        <li class="nav-item"><a class="nav-link link-success" href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
-        <li class="nav-item"><a class="nav-link link-success" href="./historia.html" rel="noopener noreferrer">Historia</a></li>
-        <li class="nav-item"><a class="nav-link link-success" href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
-        <li class="nav-item"><a class="nav-link link-success" href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
-      </ul>
-    </div>
+    <header>
+      <div class="d-flex justify-content-center">
+         <a href="./index.html"><img class="py-4" src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
+         </a>
+       </div>
+      <!-- nav MENU LINKS -->
+      <div class="dropdown boton_menu justify-content-center my-3">
+       <button type="button" class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+       <ul class="dropdown-menu">
+         <li><a class="dropdown-item" href="./modelos.html">Modelos</a></li>
+         <li><a class="dropdown-item" href="./a_medida.html">A medida</a></li>
+         <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
+         <li><a class="dropdown-item" href="./promociones.html">Promociones</a></li>
+         <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+       </ul>
+     </div>
+       <nav class="menu_desktop">
+         <ul class="nav justify-content-between w-100">
+           <li class="nav-item"><a class="nav-link link-success" href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
+           <li class="nav-item"><a class="nav-link link-success" href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
+           <li class="nav-item"><a class="nav-link link-success" href="./historia.html" rel="noopener noreferrer">Historia</a></li>
+           <li class="nav-item"><a class="nav-link link-success" href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
+           <li class="nav-item"><a class="nav-link link-success" href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
+         </ul>
+       </nav>
   </header>
     <!-- imagenes de los MODELOS DISPONIBLES -->
-    <main class="container bg-light p-2">
+    <main class="p-2">
       <h2 class="text-center">Modelos disponibles</h2>
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -85,31 +83,31 @@
       
 
     </main>
-      <!--  FOOTER  -->
-   <footer class="container">
-    <div class="row">
-      <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
-        <h4 class="text-uppercase">redes sociales</h4>
-          <div class="d-flex flex-row justify-content-between">
-            <il><a href="https://www.instagram.com/espejos_deco/" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/ig.png" alt=""></a></il>
-            <il><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/facebook.png" alt=""></a></il>
-            <il><a href="http://pinterest.com" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/pinterest.png" alt=""></a></il>
-          </div>
-      </div>
-      <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
-        <h4 class="text-uppercase">contacto</h4>
-        <p>espejos.deco@gmail.com</p>
-      </div>
-      <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
-        <h4 class="text-uppercase">medios de pago</h4>
-        <div class="d-flex flex-row justify-content-between gap-5">
-          <li><img class="imgtarjetas" src="./images/visa.png" alt="visa"></li>
-          <li><img class="imgtarjetas" src="./images/americanexpress.png" alt="american express"></li>
-          <li><img class="imgtarjetas" src="./images/mastercard.png" alt="mastercard"></li>
+<!--  FOOTER  -->
+<footer>
+  <div class="row py-3">
+    <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+      <h4 class="text-uppercase">redes sociales</h4>
+        <div class="d-flex flex-row justify-content-between">
+          <il><a href="https://www.instagram.com/espejos_deco/" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/ig.png" alt=""></a></il>
+          <il><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/facebook.png" alt=""></a></il>
+          <il><a href="http://pinterest.com" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/pinterest.png" alt=""></a></il>
         </div>
+    </div>
+    <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+      <h4 class="text-uppercase">contacto</h4>
+      <p>espejos.deco@gmail.com</p>
+    </div>
+    <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+      <h4 class="text-uppercase">medios de pago</h4>
+      <div class="d-flex flex-row justify-content-between gap-5">
+        <li><img class="imgtarjetas" src="./images/visa.png" alt="visa"></li>
+        <li><img class="imgtarjetas" src="./images/americanexpress.png" alt="american express"></li>
+        <li><img class="imgtarjetas" src="./images/mastercard.png" alt="mastercard"></li>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
       AOS.init();

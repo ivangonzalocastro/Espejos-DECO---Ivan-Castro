@@ -10,35 +10,33 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Modelos a medida Espejos DECO</title>
   </head>
-  <body>
+  <body class="container">
     <!-- HEADER -->
-    <header>
-      
-      <div class="container d-flex justify-content-center">
-          <a href="./index.html"><img src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
-          </a>
-        </div>
-      <!-- nav MENU LINKS -->
-      <div class="dropdown boton_menu justify-content-center my-3">
-        <button type="button" class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="./modelos.html">Modelos</a></li>
-          <li><a class="dropdown-item" href="./a_medida.html">A medida</a></li>
-          <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
-          <li><a class="dropdown-item" href="./promociones.html">Promociones</a></li>
-          <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+    <header>  
+      <div class="d-flex justify-content-center">
+        <a href="./index.html"><img class="py-4" src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
+        </a>
+      </div>
+     <!-- nav MENU LINKS -->
+     <div class="dropdown boton_menu justify-content-center my-3">
+      <button type="button" class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="./modelos.html">Modelos</a></li>
+        <li><a class="dropdown-item" href="./a_medida.html">A medida</a></li>
+        <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
+        <li><a class="dropdown-item" href="./promociones.html">Promociones</a></li>
+        <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+      <nav class="menu_desktop">
+        <ul class="nav justify-content-between w-100">
+          <li class="nav-item"><a class="nav-link link-success" href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./historia.html" rel="noopener noreferrer">Historia</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
         </ul>
-      </div>
-    
-      <div class="menu_desktop">
-          <ul class=" container nav justify-content-evenly">
-            <li class="nav-item"><a class="nav-link link-success" href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
-            <li class="nav-item"><a class="nav-link link-success" href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
-            <li class="nav-item"><a class="nav-link link-success" href="./historia.html" rel="noopener noreferrer">Historia</a></li>
-            <li class="nav-item"><a class="nav-link link-success" href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
-            <li class="nav-item"><a class="nav-link link-success" href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
-          </ul>
-      </div>
+      </nav>
     </header>
     <!-- FORMULARIO PARA INSERTAR MEDIDAS DEL MODELO -->
     <main class="container my-6 bg-light p-2" >
@@ -70,8 +68,8 @@
       </form>
     </main>
    <!--  FOOTER  -->
-   <footer class="container">
-      <div class="row">
+   <footer>
+      <div class="row py-3">
         <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
           <h4 class="text-uppercase">redes sociales</h4>
             <div class="d-flex flex-row justify-content-between">

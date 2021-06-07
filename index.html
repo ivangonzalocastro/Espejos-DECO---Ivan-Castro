@@ -10,66 +10,67 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>ESPEJOS DECO</title>
   </head>
-  <body>
+  <body class="container">
+
     <!-- HEADER -->
-    <header class="container">
-      <div class="container d-flex justify-content-center">
-        <img src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
+    <header>
+     <div class="d-flex justify-content-center">
+        <a href="./index.html"><img class="py-4" src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
+        </a>
       </div>
-      <!-- nav MENU LINKS -->
-      <div class="dropdown boton_menu justify-content-center my-3">
-        <button type="button" class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="./modelos.html">Modelos</a></li>
-          <li><a class="dropdown-item" href="./a_medida.html">A medida<span class="badge bg-danger rounded-pill">New</span></a></li>
-          <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
-          <li><a class="dropdown-item" href="./promociones.html">Promociones</a></li>
-          <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+     <!-- nav MENU LINKS -->
+     <div class="dropdown boton_menu justify-content-center my-3">
+      <button type="button" class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="./modelos.html">Modelos</a></li>
+        <li><a class="dropdown-item" href="./a_medida.html">A medida</a></li>
+        <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
+        <li><a class="dropdown-item" href="./promociones.html">Promociones</a></li>
+        <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+      <nav class="menu_desktop">
+        <ul class="nav justify-content-between w-100">
+          <li class="nav-item"><a class="nav-link link-success" href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./historia.html" rel="noopener noreferrer">Historia</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link link-success" href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
         </ul>
-      </div>
-      
-      <div class="menu_desktop">
-          <ul class=" container nav justify-content-evenly">
-            <li class="nav-item"><a class="nav-link link-success" href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
-            <li class="nav-item"><a class="nav-link link-success" href="./a_medida.html" rel="noopener noreferrer">A medida<span class="badge bg-danger rounded-pill">New</span></a></a></li>
-            <li class="nav-item"><a class="nav-link link-success" href="./historia.html" rel="noopener noreferrer">Historia</a></li>
-            <li class="nav-item"><a class="nav-link link-success" href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
-            <li class="nav-item"><a class="nav-link link-success" href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
-          </ul>
-        </div>
-      <div class="container d-flex justify-content-center align-items-center py-5 imagen_titulo ">
+      </nav>
+      <div class="d-flex justify-content-center align-items-center py-5 imagen_titulo ">
       <h1>ESPEJOS DECO</h1>
       </div>
     </header>
     <!-- MAIN -->
     <main>
-      <div class="container d-flex flex-column align-items-center py-2">
+      <div class="d-flex flex-column align-items-center py-2">
         <h2 class="m-2">DECORACIONES</h2>
         <p class="m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis nihil ratione voluptatibus, amet dolores repellat expedita. Illum maxime aperiam, amet vero, excepturi fugiat dolorum explicabo eos maiores rem veritatis qui, libero voluptate. Porro debitis minus, dignissimos voluptatum ipsum maxime.</p>
       </div>
-      <div class="container">
-        <div class="row" data-aos="fade-up">
-        <div class="col-s-12 col-md-4 d-flex flex-column justify-content-between my-2 cartas bg-light">
+      <div>
+        <div class="row gap-1 justify-content-evenly" data-aos="fade-up">
+        <div class="col-s-12 col-md-4 d-flex flex-column justify-content-between my-3 rounded-3 cartas">
           <h3 class="text-center p-2 text-uppercase">Circulares</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos possimus, repellendus neque repellat tenetur illo architecto ullam deleniti enim!</p>
-          <img src="./images/modelo circular.jpeg" alt="modelo circular">
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos possimus, repellendus neque repellat tenetur illo architecto ullam deleniti enim!</p>
+          <img class="my-3" src="./images/modelo circular.jpeg" alt="modelo circular">
         </div>
-        <div class="col-s-12 col-md-4 d-flex flex-column justify-content-between my-2 cartas bg-light">
+        <div class="col-s-12 col-md-4 d-flex flex-column justify-content-between my-3 rounded-3 cartas">
           <h3 class="text-center p-2 text-uppercase">cuadrados</h4>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <img src="./images/modelo cuadrado.jpeg" alt="modelo cuadrado">
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur.</p>
+          <img class="my-3" src="./images/modelo cuadrado.jpeg" alt="modelo cuadrado">
         </div>
-        <div class="col-s-12 col-md-4 d-flex flex-column justify-content-between my-2 cartas bg-light">
-          <h3 class="text-center m-2 text-uppercase">rectangulares</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos possimus, repellendus neque repellat tenetur illo.</p>
-          <img src="./images/modelo rectangular.jpeg" alt="modelo rectangular">
+        <div class="col-s-12 col-md-4 d-flex flex-column justify-content-between my-3 rounded-3 cartas">
+          <h3 class="text-center p-2 text-uppercase">rectangulares</h4>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos possimus, repellendus neque repellat tenetur illo.</p>
+          <img class="my-3" src="./images/modelo rectangular.jpeg" alt="modelo rectangular">
         </div>
       </div>
       </div>
     </main>
     <!--  FOOTER  -->
-    <footer class="container">
-      <div class="row">
+    <footer>
+      <div class="row py-3">
         <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
           <h4 class="text-uppercase">redes sociales</h4>
             <div class="d-flex flex-row justify-content-between">

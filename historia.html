@@ -8,66 +8,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Historia Espejos DECO</title>
   </head>
   
-  <body>
+  <body class="container">
     <!-- HEADER -->
-    <header>
-      <div class="logo">
-        <a href="./index.html"><img src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
-        </a>
-      </div>
-      <nav class="menu">
-        <ul>
-          <li><a href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
-          <li><a href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
-          <li><a href="./historia.html" rel="noopener noreferrer">Historia</a></li>
-          <li><a href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
-          <li><a href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+   <!-- HEADER -->
+   <header>
+    <div class="d-flex justify-content-center">
+       <a href="./index.html"><img class="py-4" src="./images/LOGO ESPEJOS DECO.png" alt="logo espejos deco">
+       </a>
+     </div>
+    <!-- nav MENU LINKS -->
+    <div class="dropdown boton_menu justify-content-center my-3">
+     <button type="button" class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+     <ul class="dropdown-menu">
+       <li><a class="dropdown-item" href="./modelos.html">Modelos</a></li>
+       <li><a class="dropdown-item" href="./a_medida.html">A medida</a></li>
+       <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
+       <li><a class="dropdown-item" href="./promociones.html">Promociones</a></li>
+       <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+     </ul>
+   </div>
+     <nav class="menu_desktop">
+       <ul class="nav justify-content-between w-100">
+         <li class="nav-item"><a class="nav-link link-success" href="./modelos.html" rel="noopener noreferrer">Modelos</a></li>
+         <li class="nav-item"><a class="nav-link link-success" href="./a_medida.html" rel="noopener noreferrer">A medida</a></li>
+         <li class="nav-item"><a class="nav-link link-success" href="./historia.html" rel="noopener noreferrer">Historia</a></li>
+         <li class="nav-item"><a class="nav-link link-success" href="./promociones.html" rel="noopener noreferrer">Promociones</a></li>
+         <li class="nav-item"><a class="nav-link link-success" href="./contacto.html" rel="noopener noreferrer">Contacto</a></li>
+       </ul>
+     </nav>
+  </header>
     <!-- PEQUEÑA HISTORIA ACERCA DE LA EMPRESA -->
-    <main data-aos="flip-down" data-aos-delay="300">
-      <h2 class="titulo">Acerca de <div class="negrita">Espejos deco</div></h2>
-      <hr>
-      <p class="historia">
-        Un emprendimiento que surgió en la cuarentena, pero que ya venía pensando desde hace tiempo, ya que hace unos años que hago espejos con marcos artesanales.
+    <main class="my-5 rounded-2 row" data-aos="flip-down" data-aos-delay="300">
+      <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+        <h2 class=" fw-light p-4">Acerca de <div class="fw-bold">Espejos deco</div></h2>
+        <hr>
+        <p class="fw-light p-2">
+          Un emprendimiento que surgió en la cuarentena, pero que ya venía pensando desde hace tiempo, ya que hace unos años que hago espejos con marcos artesanales.
 
-Los espejos son decorativos con marcos originales hechos con Venecitas, piedras, vidrio y mármol 💝 Los diseños son únicos y exclusivos. Y también pueden ser a medida 👌.
+  Los espejos son decorativos con marcos originales hechos con Venecitas, piedras, vidrio y mármol 💝 Los diseños son únicos y exclusivos. Y también pueden ser a medida 👌.
 
-Podes solicitar el catálogo! 🥰
-Se retiran por Caballito a dos cuadras de Plaza Irlanda y también hacemos envíos en capital y zonas cercanas 🚚
-      </p>
-      <img class="imagen-historia" src="./images/modelo 3.jpeg" alt="modelo 3">
+  Podes solicitar el catálogo! 🥰
+  Se retiran por Caballito a dos cuadras de Plaza Irlanda y también hacemos envíos en capital y zonas cercanas 🚚
+        </p>
+      </div>
+      <img class="col-md-6 p-4" src="./images/modelo 3.jpeg" alt="modelo 3">
     </main>
     <!--  FOOTER  -->
     <footer>
-      <div class="footer__socialmedia">
-        <h4>redes sociales</h4>
-        <ul>
-          <il><a href="https://www.instagram.com/espejos_deco/" target="_blank" rel="noopener noreferrer"><img src="./images/ig.png" alt=""></a></il>
-          <il><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img src="./images/facebook.png" alt=""></a></il>
-          <il><a href="http://pinterest.com" target="_blank" rel="noopener noreferrer"><img src="./images/pinterest.png" alt=""></a></il>
-        </ul>
+      <div class="row py-3">
+        <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+          <h4 class="text-uppercase">redes sociales</h4>
+            <div class="d-flex flex-row justify-content-between">
+              <il><a href="https://www.instagram.com/espejos_deco/" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/ig.png" alt=""></a></il>
+              <il><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/facebook.png" alt=""></a></il>
+              <il><a href="http://pinterest.com" target="_blank" rel="noopener noreferrer"><img class="mx-4" src="./images/pinterest.png" alt=""></a></il>
+            </div>
+        </div>
+        <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+          <h4 class="text-uppercase">contacto</h4>
+          <p>espejos.deco@gmail.com</p>
+        </div>
+        <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
+          <h4 class="text-uppercase">medios de pago</h4>
+          <div class="d-flex flex-row justify-content-between gap-5">
+            <li><img class="imgtarjetas" src="./images/visa.png" alt="visa"></li>
+            <li><img class="imgtarjetas" src="./images/americanexpress.png" alt="american express"></li>
+            <li><img class="imgtarjetas" src="./images/mastercard.png" alt="mastercard"></li>
+          </div>
+        </div>
       </div>
-      <div class="footer__contact">
-        <h4>contacto</h4>
-        <p>espejos.deco@gmail.com</p>
-      </div>
-      <div class="footer__mediosdepago">
-        <h4>medios de pago</h4>
-        <ul>
-          <li><img src="./images/visa.png" alt="visa"></li>
-          <li><img src="./images/americanexpress.png" alt="american express"></li>
-          <li><img src="./images/mastercard.png" alt="mastercard"></li>
-        </ul>
-      </div>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

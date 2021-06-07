@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .imagen_titulo{
   background-image: url(https://cdn.pixabay.com/photo/2015/12/08/00/26/desk-1081708_1280.jpg);
@@ -40,4 +41,21 @@ li{
   }
   .boton_menu{
     display: none;
+}
+}
+.cartas{
+  background-color: #04D9C4;
+  transition: background-color 500ms;
+}
+.cartas img{
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: transform 200ms, background-color 500ms;
+}
+.cartas img:hover{
+  transform: scale(1.02);
+  filter: grayscale(0%);
+}
+.cartas:hover{
+  background-color: #ad3bcdb1;
 }
