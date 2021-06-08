@@ -7,8 +7,6 @@
 /* FONDO FOTO LIVING SILLA */
 .imagen_titulo{
   background-image: url(https://cdn.pixabay.com/photo/2015/12/08/00/26/desk-1081708_1280.jpg);
-  /* object-fit: cover;
-  object-position: center; */
   background-position: bottom;
   background-size: cover;
   height: 500px;
@@ -65,6 +63,7 @@ li{
     display: none;
 }
 }
+/* IMAGENES EN COLORES CUANDO LA PANTALLA SEA CHICA */
 @media screen and (max-width: 768px){
 .cartas img{
   filter: grayscale(0%);
