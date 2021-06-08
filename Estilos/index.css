@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   letter-spacing: 2px;
+  /* overflow: hidden; */
 }
 /* FONDO FOTO LIVING SILLA */
 .imagen_titulo{
@@ -22,8 +23,11 @@
 .novedad{
   color: #fff;
 }
+.contenedor-imagen{
+height: 200px;
+}
 main div img{
-  height: 100%;
+  height: 500px;
   width: 100%;
   object-fit: cover;
   object-position: center;
