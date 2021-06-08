@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./Estilos/amedida.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Modelos a medida Espejos DECO</title>
   </head>
@@ -39,37 +40,37 @@
       </nav>
     </header>
     <!-- FORMULARIO PARA INSERTAR MEDIDAS DEL MODELO -->
-    <main class="container my-6 bg-light p-2" >
-      <div>
-        <h4 class="text-center my-4">Dejenos aqui los detalles de su modelo</h4>
-      </div>
-      <form class="row justify-content-center">
-        <div class="mb-3 col-md-6">
-          <label for="altura" class="form-label">Altura deseada (en cm):</label>
-          <input type="number" class="form-control" id="altura" name="altura" minlength="40" maxlength="100">
+    <main class="container my-3 rounded-3 p-2" data-aos="flip-down" data-aos-delay="300">
+        <div>
+          <h4 class="text-center my-4">Dejenos aqui los detalles de su modelo</h4>
         </div>
-        <br>
-        <div class="mb-3 col-md-6">
-          <label for="ancho" class="form-label">Ancho deseado (en cm):</label>
-          <input type="number" class="form-control" id="ancho" name="ancho" minlength="40" maxlength="100">
-        </div>
-        <br>
-        <div class="mb-3">
-          <label for="personalizacion" class="form-label">Personalización</label>
-          <textarea class="form-control" name="personalizacion" id="personalizacion" cols="30" rows="3" placeholder="Dejenos aqui los detalles deseados"></textarea>
-        </div>
-        <br>
-        <div class="mb-3">
-          <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" name="email">
-        </div>
-        <br>
-        <input class="mb-3 col-md-3" type="submit" name="enviar" id="enviar">
-      </form>
+        <form class="row justify-content-center">
+          <div class="mb-3 col-md-6">
+            <label for="altura" class="form-label">Altura deseada (en cm):</label>
+            <input type="number" class="form-control" id="altura" name="altura" minlength="40" maxlength="100">
+          </div>
+          <br>
+          <div class="mb-3 col-md-6">
+            <label for="ancho" class="form-label">Ancho deseado (en cm):</label>
+            <input type="number" class="form-control" id="ancho" name="ancho" minlength="40" maxlength="100">
+          </div>
+          <br>
+          <div class="mb-3">
+            <label for="personalizacion" class="form-label">Personalización</label>
+            <textarea class="form-control" name="personalizacion" id="personalizacion" cols="30" rows="3" placeholder="Dejenos aqui los detalles deseados"></textarea>
+          </div>
+          <br>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+          <br>
+          <input class="mb-3 col-md-3" type="submit" name="enviar" id="enviar">
+        </form>
     </main>
    <!--  FOOTER  -->
    <footer>
-      <div class="row py-3">
+      <div class="row py-3 bg-light">
         <div class="col-md-4 col-s-12 d-flex flex-column justify-content-center align-items-center py-2">
           <h4 class="text-uppercase">redes sociales</h4>
             <div class="d-flex flex-row justify-content-between">
@@ -92,6 +93,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

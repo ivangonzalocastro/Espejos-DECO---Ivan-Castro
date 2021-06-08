@@ -12,6 +12,9 @@
   display: flex;
   justify-content: center;
 }
+main{
+  background-color: #04D9C4;
+}
 li{
   list-style-type: none;
 }
@@ -28,4 +31,5 @@ footer div div div li img{
   }
   .boton_menu{
     display: none;
+}
 }

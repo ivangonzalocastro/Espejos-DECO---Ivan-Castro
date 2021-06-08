@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: 2px;
 }
 .imagen_titulo{
   background-image: url(https://cdn.pixabay.com/photo/2015/12/08/00/26/desk-1081708_1280.jpg);
@@ -19,6 +20,9 @@
   display: flex;
   justify-content: center;
 }
+.novedad{
+  color: #fff;
+}
 main div img{
   height: 100%;
   width: 100%;
@@ -32,16 +36,6 @@ footer div div div li img{
 }
 li{
   list-style-type: none;
-}
-/* MENU DESPLEGABLE EN CASO DE QUE PANTALLAS CHICAS Y MENU NAVEGACION EN CASA DE PANTALLAS GRANDES */
-@media screen and (min-width: 768px) {
-  .menu_desktop{
-    display: flex;
-    justify-content: space-between;
-  }
-  .boton_menu{
-    display: none;
-}
 }
 .cartas{
   background-color: #04D9C4;
@@ -58,4 +52,19 @@ li{
 }
 .cartas:hover{
   background-color: #ad3bcdb1;
+}
+/* MENU DESPLEGABLE EN CASO DE QUE PANTALLAS CHICAS Y MENU NAVEGACION EN CASA DE PANTALLAS GRANDES */
+@media screen and (min-width: 768px) {
+  .menu_desktop{
+    display: flex;
+    justify-content: space-between;
+  }
+  .boton_menu{
+    display: none;
+}
+}
+@media screen and (max-width: 768px){
+.cartas img{
+  filter: grayscale(0%);
+}
 }

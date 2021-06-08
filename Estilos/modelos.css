@@ -33,3 +33,12 @@ main img {
   .boton_menu{
     display: none;
 }
+}
+
+main{
+  background-color: #04D9C4;
+  transition: background-color 500ms;
+}
+main:hover{
+  background-color: #ad3bcdb1;
+}
