@@ -1,0 +1,90 @@
+@import 'Partials/reset';
+@import 'Partials/colors';
+@import 'Partials/mixins';
+@import 'Partials/menu';
+
+$size-imagenes:500px;
+
+/*FONDO FOTO LIVING SILLA */
+
+.imagen_titulo{
+  background-image: url(https://cdn.pixabay.com/photo/2015/12/08/00/26/desk-1081708_1280.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 500px;
+}
+
+
+// APLIQUE BEM CON EL SIGNO "&"
+
+.novedad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(40, 39, 39);
+  padding: 20px 0px;
+  border: 5px solid $violeta;
+    &__texto{
+    color: $blanco;
+    }
+}
+// APLICO @EXTEND
+.promociones{
+  @extend .novedad;
+  border: 5px solid $celeste;
+  &__texto{
+    color: $blanco;
+  }
+}
+// APLICO OPERACION DE DIVIDIR Y MULTIPLICAR
+.contenedor-imagen{
+height: ($size-imagenes/5)*2;
+}
+
+main div img{
+  height: $size-imagenes;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+//APLICO @MIXINS
+footer div div div li img{
+  @include size(40px,40px);
+  object-position: center;
+}
+li{
+  list-style-type: none;
+}
+/* ESTILO A LAS CARTAS */
+.cartas{
+  background-color: $celeste;
+  transition: background-color 500ms;
+}
+.cartas img{
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: transform 200ms, background-color 500ms;
+}
+.cartas img:hover{
+  transform: scale(1.02);
+  filter: grayscale(0%);
+}
+.cartas:hover{
+  background-color: $violeta;
+}
+
+/* IMAGENES EN COLORES CUANDO LA PANTALLA SEA CHICA */
+@media screen and (max-width: 768px){
+.cartas img{
+  filter: grayscale(0%);
+}
+}
+// APLICACION DE BEM PARA FOOTER
+.footer{
+ &__seccion{
+   &-texto{
+     font-weight: lighter;
+   }
+ }
+}

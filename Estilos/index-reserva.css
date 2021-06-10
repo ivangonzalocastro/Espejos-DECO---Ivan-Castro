@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  /* overflow: hidden; */
+}
+/* FONDO FOTO LIVING SILLA */
+.imagen_titulo{
+  background-image: url(https://cdn.pixabay.com/photo/2015/12/08/00/26/desk-1081708_1280.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 500px;
+}
+
+.menu_desktop{
+  display: none;
+}
+.boton_menu{
+  display: flex;
+  justify-content: center;
+}
+.novedad{
+  color: #fff;
+}
+.contenedor-imagen{
+height: 200px;
+}
+main div img{
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+footer div div div li img{
+  height: 40px;
+  width: 40px;
+  object-position: center;
+}
+li{
+  list-style-type: none;
+}
+/* ESTILO A LAS CARTAS */
+.cartas{
+  background-color: #04D9C4;
+  transition: background-color 500ms;
+}
+.cartas img{
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: transform 200ms, background-color 500ms;
+}
+.cartas img:hover{
+  transform: scale(1.02);
+  filter: grayscale(0%);
+}
+.cartas:hover{
+  background-color: #ad3bcdb1;
+}
+/* MENU DESPLEGABLE EN CASO DE QUE PANTALLAS CHICAS Y MENU NAVEGACION EN CASA DE PANTALLAS GRANDES */
+@media screen and (min-width: 768px) {
+  .menu_desktop{
+    display: flex;
+    justify-content: space-between;
+  }
+  .boton_menu{
+    display: none;
+}
+}
+/* IMAGENES EN COLORES CUANDO LA PANTALLA SEA CHICA */
+@media screen and (max-width: 768px){
+.cartas img{
+  filter: grayscale(0%);
+}
+}

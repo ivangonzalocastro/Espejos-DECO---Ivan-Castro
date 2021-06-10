@@ -1,0 +1,17 @@
+/* MENU DESPLEGABLE EN CASO DE QUE PANTALLAS CHICAS Y MENU NAVEGACION EN CASA DE PANTALLAS GRANDES */
+.menu_desktop{
+  display: none;
+}
+.boton_menu{
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .menu_desktop{
+    display: flex;
+    justify-content: space-between;
+  }
+  .boton_menu{
+    display: none;
+}
+}
