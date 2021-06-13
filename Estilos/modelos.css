@@ -18,12 +18,7 @@ footer div div div li img{
   width: 40px;
   object-position: center;
 }
-main img {
-  height: 500px;
-  width: 100%;
-  object-position: center;
-  object-fit: contain;
-}
+
 /* MENU DESPLEGABLE EN CASO DE QUE PANTALLAS CHICAS Y MENU NAVEGACION EN CASA DE PANTALLAS GRANDES */
 @media screen and (min-width: 768px) {
   .menu_desktop{
@@ -33,12 +28,4 @@ main img {
   .boton_menu{
     display: none;
 }
-}
-
-main{
-  background-color: #04D9C4;
-  transition: background-color 500ms;
-}
-main:hover{
-  background-color: #ad3bcdb1;
 }

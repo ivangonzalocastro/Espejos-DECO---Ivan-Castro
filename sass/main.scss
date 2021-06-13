@@ -30,7 +30,7 @@ $size-imagenes:500px;
     }
 }
 // APLICO @EXTEND
-.promociones{
+.aviso{
   @extend .novedad;
   border: 5px solid $celeste;
   &__texto{
@@ -87,4 +87,36 @@ li{
      font-weight: lighter;
    }
  }
+}
+// ESTILO PARA PAGINA A MEDIDA
+.main__medida{
+  background-color: $celeste;
+}
+// ESTILO PARA PAGINA CONTACTO
+.contacto{
+  background-color: $celeste;
+}
+// ESTILO PARA PAGINA HISTORIA
+.historia{
+  background-color:$violeta ;
+}
+
+// ESTILO PARA PAGINA MODELOS
+.modelos img {
+  height: 500px;
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
+}
+.modelos{
+  background-color: $celeste;
+  transition: background-color 500ms;
+}
+.modelos:hover{
+  background-color: $violeta;
+}
+
+// ESTILO PARA PAGINA MODELOS
+.promociones{
+  background-color: #ad3bcdb1;
 }

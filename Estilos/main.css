@@ -26,7 +26,7 @@
   background-size: cover;
   height: 500px; }
 
-.novedad, .promociones {
+.novedad, .aviso {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,9 +37,9 @@
   .novedad__texto {
     color: #fff; }
 
-.promociones {
+.aviso {
   border: 5px solid #04D9C4; }
-  .promociones__texto {
+  .aviso__texto {
     color: #fff; }
 
 .contenedor-imagen {
@@ -83,3 +83,28 @@ li {
 
 .footer__seccion-texto {
   font-weight: lighter; }
+
+.main__medida {
+  background-color: #04D9C4; }
+
+.contacto {
+  background-color: #04D9C4; }
+
+.historia {
+  background-color: #ad3bcdb1; }
+
+.modelos img {
+  height: 500px;
+  width: 100%;
+  object-position: center;
+  object-fit: contain; }
+
+.modelos {
+  background-color: #04D9C4;
+  transition: background-color 500ms; }
+
+.modelos:hover {
+  background-color: #ad3bcdb1; }
+
+.promociones {
+  background-color: #ad3bcdb1; }
