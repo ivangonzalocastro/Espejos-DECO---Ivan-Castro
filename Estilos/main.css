@@ -19,6 +19,31 @@
   .boton_menu {
     display: none; } }
 
+.main__medida {
+  background-color: #04D9C4; }
+
+.contacto {
+  background-color: #04D9C4; }
+
+.historia {
+  background-color: #ad3bcdb1; }
+
+.modelos img {
+  height: 500px;
+  width: 100%;
+  object-position: center;
+  object-fit: contain; }
+
+.modelos {
+  background-color: #04D9C4;
+  transition: background-color 500ms; }
+
+.modelos:hover {
+  background-color: #ad3bcdb1; }
+
+.promociones {
+  background-color: #ad3bcdb1; }
+
 /*FONDO FOTO LIVING SILLA */
 .imagen_titulo {
   background-image: url(https://cdn.pixabay.com/photo/2015/12/08/00/26/desk-1081708_1280.jpg);
@@ -83,28 +108,3 @@ li {
 
 .footer__seccion-texto {
   font-weight: lighter; }
-
-.main__medida {
-  background-color: #04D9C4; }
-
-.contacto {
-  background-color: #04D9C4; }
-
-.historia {
-  background-color: #ad3bcdb1; }
-
-.modelos img {
-  height: 500px;
-  width: 100%;
-  object-position: center;
-  object-fit: contain; }
-
-.modelos {
-  background-color: #04D9C4;
-  transition: background-color 500ms; }
-
-.modelos:hover {
-  background-color: #ad3bcdb1; }
-
-.promociones {
-  background-color: #ad3bcdb1; }

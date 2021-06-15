@@ -1,0 +1,14 @@
+// ESTILO PARA PAGINA MODELOS
+.modelos img {
+  height: 500px;
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
+}
+.modelos{
+  background-color: $celeste;
+  transition: background-color 500ms;
+}
+.modelos:hover{
+  background-color: $violeta;
+}
