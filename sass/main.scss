@@ -59,6 +59,10 @@ footer div div ul li img{
   object-position: center;
   object-fit:contain;
 }
+.imgtarjetas{
+  @include size(40px,40px);
+}
+
 li{
   list-style-type: none;
 }
