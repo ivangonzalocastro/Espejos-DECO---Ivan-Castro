@@ -1,2 +1,4 @@
 node_modules/
 CSS_viejo/
+package-lock.json
+package.json

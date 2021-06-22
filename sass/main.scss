@@ -54,12 +54,16 @@ main div img{
   object-position: center;
 }
 //APLICO @MIXINS
-footer div div div li img{
+footer div div ul li img{
   @include size(40px,40px);
   object-position: center;
+  object-fit:contain;
 }
 li{
   list-style-type: none;
+}
+ul{
+  padding: 0;
 }
 /* ESTILO A LAS CARTAS */
 .cartas{

@@ -76,13 +76,17 @@ main div img {
   object-fit: cover;
   object-position: center; }
 
-footer div div div li img {
+footer div div ul li img {
   width: 40px;
   height: 40px;
-  object-position: center; }
+  object-position: center;
+  object-fit: contain; }
 
 li {
   list-style-type: none; }
+
+ul {
+  padding: 0; }
 
 /* ESTILO A LAS CARTAS */
 .cartas {
